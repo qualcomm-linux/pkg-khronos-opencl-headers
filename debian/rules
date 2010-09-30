@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+api		 = 1.0
+headers		 = opencl.h cl_platform.h cl.h cl_ext.h cl_d3d10.h cl_gl.h cl_gl_ext.h
+headers_hpp	 = cl.hpp
+get-orig-source:
+	rm -rf opencl-headers-$(api)
+	mkdir opencl-headers-$(api)
+	set -e; cd opencl-headers-$(api) ; \
+	for h in $(headers) ; do \
+		wget http://www.khronos.org/registry/cl/api/$(api)/$$h ; \
+	done ; \
+	for h in $(headers_hpp) ; do \
+		wget http://www.khronos.org/registry/cl/api/1.1/$$h ; \
+	done
+	tar cfz opencl-headers-$(api).tar.gz --owner=root --group=src opencl-headers-$(api)
+	rm -rf opencl-headers-$(api)
