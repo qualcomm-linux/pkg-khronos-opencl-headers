@@ -1,5 +1,5 @@
 Source: khronos-opencl-headers
-Section: devel
+Section: contrib/libdevel
 Priority: extra
 Maintainer: Andreas Beckmann <debian@abeckmann.de>
 Build-Depends: debhelper (>= 8)
