@@ -2,6 +2,13 @@ Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&
 Name: OpenCL headers
 Maintainer: The Khronos Group Inc. <http://www.khronos.org/>
 Source: http://www.khronos.org/registry/cl/
+Disclaimer:
+ This package is not part of the GNU/Linux Debian distribution.  It is
+ provided in the contrib archive area as a convenience to Debian users.
+ The headers provided by this package are free, but to make use of these
+ files a library that implements OpenCL is needed, too.  These
+ implementations (e.g. from NVIDIA or AMD) are only distributed under
+ non-free licenses and without source code.
 
 Files: *
 Copyright: (c) 2008-2010 The Khronos Group Inc.
