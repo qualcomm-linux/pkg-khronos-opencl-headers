@@ -2,6 +2,7 @@ khronos-opencl-headers (1.0-2010.06.13-2) unstable; urgency=low
 
   [ Russ Allbery ]
   * Upload to unstable.
+  * Add myself to Uploaders.
 
   [ Andreas Beckmann ]
   * Fix typo in debian/watch and add version=3.
