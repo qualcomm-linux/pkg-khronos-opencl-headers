@@ -3,7 +3,18 @@ khronos-opencl-headers (1.1-2010.07.15-1) experimental; urgency=low
   * OpenCL API 1.1
   * Upload to experimental.
 
- -- Andreas Beckmann <debian@abeckmann.de>  Wed, 13 Apr 2011 18:53:02 +0200
+ -- Andreas Beckmann <debian@abeckmann.de>  Wed, 27 Apr 2011 11:54:27 +0200
+
+khronos-opencl-headers (1.0-2010.06.13-2) unstable; urgency=low
+
+  [ Russ Allbery ]
+  * Upload to unstable.
+  * Add myself to Uploaders.
+
+  [ Andreas Beckmann ]
+  * Fix typo in debian/watch and add version=3.
+
+ -- Russ Allbery <rra@debian.org>  Tue, 26 Apr 2011 17:11:42 -0700
 
 khronos-opencl-headers (1.0-2010.06.13-1) experimental; urgency=low
 
