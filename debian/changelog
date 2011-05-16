@@ -4,7 +4,7 @@ khronos-opencl-headers (1.1-2010.07.15-1) experimental; urgency=low
   * Upload to experimental.
   * Update Standards-Version to 3.9.2, no changes needed.
 
- -- Andreas Beckmann <debian@abeckmann.de>  Wed, 27 Apr 2011 11:54:27 +0200
+ -- Andreas Beckmann <debian@abeckmann.de>  Sun, 15 May 2011 18:08:12 -0700
 
 khronos-opencl-headers (1.0-2010.06.13-2) unstable; urgency=low
 
