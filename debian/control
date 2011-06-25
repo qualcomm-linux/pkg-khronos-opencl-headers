@@ -1,8 +1,10 @@
 Source: khronos-opencl-headers
 Section: contrib/libdevel
 Priority: extra
-Maintainer: Andreas Beckmann <debian@abeckmann.de>
-Uploaders: Russ Allbery <rra@debian.org>
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders:
+ Andreas Beckmann <debian@abeckmann.de>,
+ Russ Allbery <rra@debian.org>,
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 Homepage: http://www.khronos.org/registry/cl/
