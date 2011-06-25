@@ -1,3 +1,10 @@
+khronos-opencl-headers (1.1-2010.07.15-1) unstable; urgency=low
+
+  [ Andreas Beckmann ]
+  * Upload to unstable.
+
+ -- Andreas Beckmann <debian@abeckmann.de>  Sat, 25 Jun 2011 18:24:31 +0200
+
 khronos-opencl-headers (1.1-2010.07.15-1) experimental; urgency=low
 
   * OpenCL API 1.1
