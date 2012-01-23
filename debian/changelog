@@ -5,7 +5,10 @@ khronos-opencl-headers (1.2-2011.11.16-1) experimental; urgency=low
   * debian/copyright: Update to dep5.mdwn?revision=202.
   * Upload to experimental.
 
- -- Andreas Beckmann <debian@abeckmann.de>  Mon, 23 Jan 2012 16:56:45 +0100
+  [ Russ Allbery ]
+  * Add DM-Upload-Allowed: yes.
+
+ -- Russ Allbery <rra@debian.org>  Mon, 23 Jan 2012 11:11:54 -0800
 
 khronos-opencl-headers (1.1-2010.07.15-2) unstable; urgency=low
 

@@ -5,6 +5,7 @@ Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
 Uploaders:
  Andreas Beckmann <debian@abeckmann.de>,
  Russ Allbery <rra@debian.org>,
+DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 Homepage: http://www.khronos.org/registry/cl/
