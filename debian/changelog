@@ -1,6 +1,13 @@
-khronos-opencl-headers (1.1-2010.07.15-2) unstable; urgency=low
+khronos-opencl-headers (1.2-2011.11.16-1) experimental; urgency=low
 
   [ Andreas Beckmann ]
+  * OpenCL API 1.2.
+  * Upload to experimental.
+
+ -- Andreas Beckmann <debian@abeckmann.de>  Mon, 23 Jan 2012 16:56:45 +0100
+
+khronos-opencl-headers (1.1-2010.07.15-2) unstable; urgency=low
+
   * Upload to unstable.
   * Set Maintainer to Debian NVIDIA Maintainers and move myself to Uploaders.
 
