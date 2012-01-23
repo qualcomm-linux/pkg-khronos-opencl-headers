@@ -1,6 +1,6 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
-Name: OpenCL headers
-Maintainer: The Khronos Group Inc. <http://www.khronos.org/>
+Format: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?revision=202&view=co
+Upstream-Name: OpenCL headers
+Upstream-Contact: The Khronos Group Inc. <http://www.khronos.org/>
 Source: http://www.khronos.org/registry/cl/
 Disclaimer:
  This package is not part of the GNU/Linux Debian distribution.  It is

@@ -2,6 +2,7 @@ khronos-opencl-headers (1.2-2011.11.16-1) experimental; urgency=low
 
   [ Andreas Beckmann ]
   * OpenCL API 1.2.
+  * debian/copyright: Update to dep5.mdwn?revision=202.
   * Upload to experimental.
 
  -- Andreas Beckmann <debian@abeckmann.de>  Mon, 23 Jan 2012 16:56:45 +0100
