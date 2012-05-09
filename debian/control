@@ -7,7 +7,7 @@ Uploaders:
  Russ Allbery <rra@debian.org>,
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.khronos.org/registry/cl/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-nvidia/packages/khronos-opencl-headers/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-nvidia/packages/khronos-opencl-headers/

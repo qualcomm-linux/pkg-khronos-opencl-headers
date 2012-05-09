@@ -3,6 +3,7 @@ khronos-opencl-headers (1.2-2012.04.18-1) UNRELEASED; urgency=low
   * New upstream release.
   * Upload to unstable.
   * debian/copyright: Use the final copyright-format 1.0 URL.
+  * Update Standards-Version to 3.9.3, no changes needed.
 
  -- Andreas Beckmann <debian@abeckmann.de>  Wed, 09 May 2012 13:27:15 +0200
 
