@@ -1,3 +1,10 @@
+khronos-opencl-headers (1.2-2012.04.18-2) unstable; urgency=low
+
+  * Move from contrib to main.  There is a free version of libopencl1 (from
+    http://forge.imag.fr/projects/ocl-icd/) coming, see #675528.
+
+ -- Andreas Beckmann <debian@abeckmann.de>  Sat, 02 Jun 2012 20:11:28 +0200
+
 khronos-opencl-headers (1.2-2012.04.18-1) unstable; urgency=low
 
   * New upstream release.

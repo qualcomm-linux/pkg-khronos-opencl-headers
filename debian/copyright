@@ -2,13 +2,6 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: OpenCL headers
 Upstream-Contact: The Khronos Group Inc. <http://www.khronos.org/>
 Source: http://www.khronos.org/registry/cl/
-Disclaimer:
- This package is not part of the GNU/Linux Debian distribution.  It is
- provided in the contrib archive area as a convenience to Debian users.
- The headers provided by this package are free, but to make use of these
- files a library that implements OpenCL is needed, too.  These
- implementations (e.g. from NVIDIA or AMD) are only distributed under
- non-free licenses and without source code.
 
 Files: *
 Copyright: (c) 2008-2012 The Khronos Group Inc.

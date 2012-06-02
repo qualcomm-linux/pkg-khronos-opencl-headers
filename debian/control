@@ -1,5 +1,5 @@
 Source: khronos-opencl-headers
-Section: contrib/libdevel
+Section: libdevel
 Priority: extra
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
 Uploaders:
