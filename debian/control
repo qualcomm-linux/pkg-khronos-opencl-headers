@@ -22,6 +22,6 @@ Description: OpenCL (Open Computing Language) header files
  general-purpose parallel programming of heterogeneous systems that include
  CPUs, GPUs and other processors.
  .
- This package provides the development header files for the OpenCL API 1.0
+ This package provides the development header files for the OpenCL API
  as published by The Khronos Group Inc.  The corresponding specification and
  documentation can be found on the Khronos website.
