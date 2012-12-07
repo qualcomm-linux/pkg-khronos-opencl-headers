@@ -6,7 +6,9 @@ Uploaders:
  Andreas Beckmann <debian@abeckmann.de>,
  Russ Allbery <rra@debian.org>,
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 8)
+Build-Depends:
+ debhelper (>= 8),
+ libgl1-mesa-dev,
 Standards-Version: 3.9.3
 Homepage: http://www.khronos.org/registry/cl/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-nvidia/packages/khronos-opencl-headers/trunk
