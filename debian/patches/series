@@ -1,1 +1,3 @@
 CL_EXT_SUFFIX__VERSION_1_2.diff
+clSetPrintfCallback.patch
+AMD_extensions.patch
