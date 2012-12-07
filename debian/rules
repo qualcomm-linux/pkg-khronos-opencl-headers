@@ -3,6 +3,12 @@
 %:
 	dh $@
 
+override_dh_auto_test:
+	$(MAKE) -C debian/t
+
+override_dh_auto_clean:
+	$(MAKE) -C debian/t clean
+
 api		 = 1.2
 api_hpp		 = 1.2
 headers_1.0	 = opencl.h cl_platform.h cl.h cl_ext.h cl_d3d10.h cl_gl.h cl_gl_ext.h
