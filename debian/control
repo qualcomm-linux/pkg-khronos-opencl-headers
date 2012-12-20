@@ -16,6 +16,7 @@ Vcs-Browser: http://svn.debian.org/wsvn/pkg-nvidia/packages/khronos-opencl-heade
 
 Package: opencl-headers
 Architecture: all
+Multi-Arch: allowed
 Depends: ${misc:Depends}
 Breaks: nvidia-libopencl1-dev (<< 256.53-2~), nvidia-cuda-dev (<< 3.1-1~)
 Replaces: nvidia-libopencl1-dev (<< 256.53-2~), nvidia-cuda-dev (<< 3.1-1~)
