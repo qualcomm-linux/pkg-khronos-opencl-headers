@@ -3,9 +3,8 @@ Section: libdevel
 Priority: extra
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
 Uploaders:
- Andreas Beckmann <debian@abeckmann.de>,
+ Andreas Beckmann <anbe@debian.org>,
  Russ Allbery <rra@debian.org>,
-DM-Upload-Allowed: yes
 Build-Depends:
  debhelper (>= 8),
  libgl1-mesa-dev,

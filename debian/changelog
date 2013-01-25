@@ -1,3 +1,9 @@
+khronos-opencl-headers (1.2-2012.11.30-3) UNRELEASED; urgency=low
+
+  * Update my email address and drop DMUA.
+
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 25 Jan 2013 23:09:13 +0100
+
 khronos-opencl-headers (1.2-2012.11.30-2) unstable; urgency=low
 
   * opencl-headers: Set Multi-Arch: allowed.  (Closes: #698495)
