@@ -1,5 +1,5 @@
-CFLAGS		+= -I. $(OPENCLFLAGS)
-CXXFLAGS	+= -I. $(OPENCLFLAGS)
+CFLAGS		+= -I. $(OPENCLFLAGS) -msse2 -msse
+CXXFLAGS	+= -I. $(OPENCLFLAGS) -msse2 -msse
 
 check:
 	$(MAKE) compile_opencl_h

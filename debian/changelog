@@ -4,6 +4,13 @@ khronos-opencl-headers (1.2-2012.11.30-3) UNRELEASED; urgency=low
 
  -- Andreas Beckmann <anbe@debian.org>  Fri, 25 Jan 2013 23:09:13 +0100
 
+khronos-opencl-headers (1.2-2012.11.30-2ubuntu1) raring; urgency=low
+
+  * Build with -msse2 -msse. The package builds header files only, so don't
+    care about the flags which are needed to include the intrinsics headers.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 03 Apr 2013 12:17:51 +0200
+
 khronos-opencl-headers (1.2-2012.11.30-2) unstable; urgency=low
 
   * opencl-headers: Set Multi-Arch: allowed.  (Closes: #698495)
