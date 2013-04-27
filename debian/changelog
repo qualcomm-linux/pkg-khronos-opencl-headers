@@ -3,6 +3,7 @@ khronos-opencl-headers (1.2-2013.02.12-1) UNRELEASED; urgency=low
   * New upstream release.
   * CL_EXT_SUFFIX__VERSION_1_2.diff: Drop, fixed upstream.
   * clSetPrintfCallback.patch: Drop, no longer needed.
+  * Bump Standards-Version to 3.9.4 (no changes needed).
   * Update my email address and drop DMUA.
 
  -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Apr 2013 00:52:50 +0200
