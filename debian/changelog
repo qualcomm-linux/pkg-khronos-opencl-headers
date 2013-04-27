@@ -1,4 +1,4 @@
-khronos-opencl-headers (1.2-2013.02.12-1) UNRELEASED; urgency=low
+khronos-opencl-headers (1.2-2013.02.12-1) unstable; urgency=low
 
   * New upstream release.
   * CL_EXT_SUFFIX__VERSION_1_2.diff: Drop, fixed upstream.
@@ -6,7 +6,7 @@ khronos-opencl-headers (1.2-2013.02.12-1) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.4 (no changes needed).
   * Update my email address and drop DMUA.
 
- -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Apr 2013 00:52:50 +0200
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Apr 2013 01:11:59 +0200
 
 khronos-opencl-headers (1.2-2012.11.30-2ubuntu1) raring; urgency=low
 
