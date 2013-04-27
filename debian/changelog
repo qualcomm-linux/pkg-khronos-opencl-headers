@@ -1,8 +1,11 @@
-khronos-opencl-headers (1.2-2012.11.30-3) UNRELEASED; urgency=low
+khronos-opencl-headers (1.2-2013.02.12-1) UNRELEASED; urgency=low
 
+  * New upstream release.
+  * CL_EXT_SUFFIX__VERSION_1_2.diff: Drop, fixed upstream.
+  * clSetPrintfCallback.patch: Drop, no longer needed.
   * Update my email address and drop DMUA.
 
- -- Andreas Beckmann <anbe@debian.org>  Fri, 25 Jan 2013 23:09:13 +0100
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Apr 2013 00:52:50 +0200
 
 khronos-opencl-headers (1.2-2012.11.30-2ubuntu1) raring; urgency=low
 
