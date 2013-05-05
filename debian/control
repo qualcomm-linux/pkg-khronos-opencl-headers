@@ -6,7 +6,7 @@ Uploaders:
  Andreas Beckmann <anbe@debian.org>,
  Russ Allbery <rra@debian.org>,
 Build-Depends:
- debhelper (>= 8),
+ debhelper (>= 9),
  libgl1-mesa-dev,
 Standards-Version: 3.9.4
 Homepage: http://www.khronos.org/registry/cl/
