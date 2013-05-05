@@ -1,3 +1,9 @@
+khronos-opencl-headers (1.2-2013.02.12-2) UNRELEASED; urgency=low
+
+  * Use canonical Vcs-* URLs.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 06 May 2013 01:39:16 +0200
+
 khronos-opencl-headers (1.2-2013.02.12-1) unstable; urgency=low
 
   * New upstream release.

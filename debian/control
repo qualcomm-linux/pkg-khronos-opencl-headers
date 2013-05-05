@@ -10,8 +10,8 @@ Build-Depends:
  libgl1-mesa-dev,
 Standards-Version: 3.9.4
 Homepage: http://www.khronos.org/registry/cl/
-Vcs-Svn: svn://svn.debian.org/svn/pkg-nvidia/packages/khronos-opencl-headers/trunk
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-nvidia/packages/khronos-opencl-headers/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/khronos-opencl-headers/trunk
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/khronos-opencl-headers/
 
 Package: opencl-headers
 Architecture: all
