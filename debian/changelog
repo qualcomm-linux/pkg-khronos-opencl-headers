@@ -1,5 +1,6 @@
 khronos-opencl-headers (1.2-2013.02.12-2) UNRELEASED; urgency=low
 
+  * Drop Breaks/Replaces against squeeze packages.
   * Use canonical Vcs-* URLs.
 
  -- Andreas Beckmann <anbe@debian.org>  Mon, 06 May 2013 01:39:16 +0200
