@@ -5,7 +5,7 @@ Bug-Debian: http://bugs.debian.org/695136
 --- a/cl_ext.h
 +++ b/cl_ext.h
 @@ -40,6 +40,9 @@
- 	#include <CL/cl.h>
+         #include <CL/cl.h>
  #endif
  
 +/* cl_khr_fp64 extension - no extension #define since it has no functions  */
@@ -14,11 +14,10 @@ Bug-Debian: http://bugs.debian.org/695136
  /* cl_khr_fp16 extension - no extension #define since it has no functions  */
  #define CL_DEVICE_HALF_FP_CONFIG                    0x1033
  
-@@ -169,11 +172,46 @@
- #define CL_DEVICE_KERNEL_EXEC_TIMEOUT_NV            0x4005
+@@ -170,9 +173,45 @@
  #define CL_DEVICE_INTEGRATED_MEMORY_NV              0x4006
  
-+/*********************************
+ /*********************************
 +* cl_amd_device_memory_flags *
 +*********************************/
 +#define cl_amd_device_memory_flags 1
@@ -27,8 +26,8 @@ Bug-Debian: http://bugs.debian.org/695136
 +
 +/* cl_device_info */
 +#define CL_DEVICE_MAX_ATOMIC_COUNTERS_EXT           0x4032
- 
- /*********************************
++
++/*********************************
  * cl_amd_device_attribute_query *
  *********************************/
  #define CL_DEVICE_PROFILING_TIMER_OFFSET_AMD        0x4036
@@ -61,16 +60,15 @@ Bug-Debian: http://bugs.debian.org/695136
  
  #ifdef CL_VERSION_1_1
     /***********************************
-@@ -239,7 +277,11 @@
+@@ -238,6 +277,11 @@
      #define CL_PARTITION_BY_COUNTS_LIST_END_EXT         ((cl_device_partition_property_ext) 0)
      #define CL_PARTITION_BY_NAMES_LIST_END_EXT          ((cl_device_partition_property_ext) 0 - 1)
  
--
-+    /* cl_ext_atomic_counters_32 and cl_ext_atomic_counters_64 extensions 
-+     * no extension #define since they have no functions                                              
++    /* cl_ext_atomic_counters_32 and cl_ext_atomic_counters_64 extensions
++     * no extension #define since they have no functions
 +     */
 +    #define CL_DEVICE_MAX_ATOMIC_COUNTERS_EXT           0x4032
-+    
- 
- #endif /* CL_VERSION_1_1 */
- 
++
+ /*********************************
+ * cl_qcom_ext_host_ptr extension
+ *********************************/

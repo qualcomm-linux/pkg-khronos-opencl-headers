@@ -1,6 +1,7 @@
 khronos-opencl-headers (1.2-2013.06.28-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * AMD_extensions.patch: Rediffed.
   * Drop Breaks/Replaces against squeeze packages.
   * Use canonical Vcs-* URLs.
   * Switch to debhelper 9.
