@@ -1,4 +1,4 @@
-khronos-opencl-headers (1.2-2013.06.28-1) UNRELEASED; urgency=low
+khronos-opencl-headers (1.2-2013.06.28-1) unstable; urgency=low
 
   * New upstream release.
   * AMD_extensions.patch: Rediffed.
@@ -6,7 +6,7 @@ khronos-opencl-headers (1.2-2013.06.28-1) UNRELEASED; urgency=low
   * Use canonical Vcs-* URLs.
   * Switch to debhelper 9.
 
- -- Andreas Beckmann <anbe@debian.org>  Sun, 14 Jul 2013 15:03:45 +0200
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 14 Jul 2013 15:28:57 +0200
 
 khronos-opencl-headers (1.2-2013.02.12-1) unstable; urgency=low
 
