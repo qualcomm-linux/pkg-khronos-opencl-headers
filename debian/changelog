@@ -1,3 +1,9 @@
+khronos-opencl-headers (1.2-2013.06.28-2) UNRELEASED; urgency=low
+
+  * opencl-headers: Set Multi-Arch: foreign.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Jul 2013 18:08:18 +0200
+
 khronos-opencl-headers (1.2-2013.06.28-1) unstable; urgency=low
 
   * New upstream release.

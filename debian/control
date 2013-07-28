@@ -15,7 +15,7 @@ Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/khronos-opencl
 
 Package: opencl-headers
 Architecture: all
-Multi-Arch: allowed
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: OpenCL (Open Computing Language) header files
  OpenCL (Open Computing Language) is a multi-vendor open standard for
