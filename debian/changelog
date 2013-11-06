@@ -1,6 +1,7 @@
 khronos-opencl-headers (1.2-2013.10.23-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Bump Standards-Version to 3.9.5 (no changes needed).
 
  -- Andreas Beckmann <anbe@debian.org>  Wed, 06 Nov 2013 19:19:52 +0100
 
