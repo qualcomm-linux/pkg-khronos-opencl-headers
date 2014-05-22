@@ -4,7 +4,7 @@ Bug-Debian: http://bugs.debian.org/695136
 
 --- a/cl_ext.h
 +++ b/cl_ext.h
-@@ -40,6 +40,9 @@
+@@ -40,6 +40,9 @@ extern "C" {
          #include <CL/cl.h>
  #endif
  
@@ -14,7 +14,7 @@ Bug-Debian: http://bugs.debian.org/695136
  /* cl_khr_fp16 extension - no extension #define since it has no functions  */
  #define CL_DEVICE_HALF_FP_CONFIG                    0x1033
  
-@@ -170,9 +173,45 @@
+@@ -174,9 +177,45 @@ typedef CL_API_ENTRY cl_int (CL_API_CALL
  #define CL_DEVICE_INTEGRATED_MEMORY_NV              0x4006
  
  /*********************************
@@ -58,9 +58,9 @@ Bug-Debian: http://bugs.debian.org/695136
 +**************************/
 +#define CL_CONTEXT_OFFLINE_DEVICES_AMD              0x403F
  
- #ifdef CL_VERSION_1_1
-    /***********************************
-@@ -238,6 +277,11 @@
+ /*********************************
+ * cl_arm_printf extension
+@@ -248,6 +287,11 @@ typedef CL_API_ENTRY cl_int (CL_API_CALL
      #define CL_PARTITION_BY_COUNTS_LIST_END_EXT         ((cl_device_partition_property_ext) 0)
      #define CL_PARTITION_BY_NAMES_LIST_END_EXT          ((cl_device_partition_property_ext) 0 - 1)
  
