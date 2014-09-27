@@ -1,3 +1,11 @@
+khronos-opencl-headers (1.2-2014.04.13-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload
+  * Use __vector instead of vector in cl_platform.h to allow building
+    with -maltivec. Closes: #760310
+
+ -- Andreas Barth <aba@ayous.org>  Fri, 12 Sep 2014 19:52:42 +0000
+
 khronos-opencl-headers (1.2-2014.04.13-1) unstable; urgency=medium
 
   * New upstream release.
