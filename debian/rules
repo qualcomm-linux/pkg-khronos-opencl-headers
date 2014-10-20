@@ -22,10 +22,10 @@ get-orig-source:
 	mkdir $(src_dir)
 	set -e; cd $(src_dir) ; \
 	for h in $(headers_$(api)) ; do \
-		wget http://www.khronos.org/registry/cl/api/$(api)/$$h ; \
+		wget https://www.khronos.org/registry/cl/api/$(api)/$$h ; \
 	done ; \
 	for h in $(headers_hpp) ; do \
-		wget http://www.khronos.org/registry/cl/api/$(api_hpp)/$$h ; \
+		wget https://www.khronos.org/registry/cl/api/$(api_hpp)/$$h ; \
 	done
 	tar cfz $(src_file) --owner=root --group=src $(src_dir)
 	rm -rf $(src_dir)
