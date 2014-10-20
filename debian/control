@@ -8,7 +8,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 9),
  libgl1-mesa-dev,
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.khronos.org/registry/cl/
 Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/khronos-opencl-headers/trunk
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/khronos-opencl-headers/

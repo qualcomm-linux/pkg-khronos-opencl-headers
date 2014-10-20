@@ -3,6 +3,7 @@ khronos-opencl-headers (1.2-svn26009-1) UNRELEASED; urgency=medium
   * New upstream snapshot.
     - Includes cl_egl.h.
   * Switch get-orig-source target to download from SVN.  (Closes: #718658)
+  * Bump Standards-Version to 3.9.5 (no changes needed).
 
  -- Andreas Beckmann <anbe@debian.org>  Mon, 20 Oct 2014 16:40:55 +0200
 
