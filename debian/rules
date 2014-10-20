@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 package	 = khronos-opencl-headers
-api	 = 1.2
+api	 = 2.0
 
 %:
 	dh $@
@@ -13,7 +13,7 @@ override_dh_auto_clean:
 	$(MAKE) -C debian/t clean
 
 
-version		 = $(api)-svn$(REVISION)
+version		 = $(api)~svn$(REVISION)
 src_dir		 = $(package)-$(version).orig
 src_file	 = $(package)_$(version).orig.tar.gz
 svn_url		 = https://cvs.khronos.org/svn/repos/registry/trunk/public/cl/api/$(api)

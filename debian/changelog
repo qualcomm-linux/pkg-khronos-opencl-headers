@@ -1,3 +1,11 @@
+khronos-opencl-headers (2.0~svn26078-1) UNRELEASED; urgency=medium
+
+  * New upstream snapshot.
+    - OpenCL API 2.0.  (Closes: #762943)
+    - cl.hpp is gone.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 20 Oct 2014 17:17:32 +0200
+
 khronos-opencl-headers (1.2-svn26009-1) unstable; urgency=medium
 
   * New upstream snapshot.
