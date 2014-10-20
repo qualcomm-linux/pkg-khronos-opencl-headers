@@ -1,5 +1,0 @@
-version=3
-# There is no tarball or similar distribution available from
-#   http://www.khronos.org/registry/cl/
-# The headers have to be downloaded file-by-file.  The get-orig-source
-# target in debian/rules can be used to download and tar them.
