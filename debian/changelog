@@ -1,8 +1,8 @@
-khronos-opencl-headers (2.0~svn28973-1) UNRELEASED; urgency=medium
+khronos-opencl-headers (2.0~svn28973-1) experimental; urgency=medium
 
   * New upstream snapshot.
 
- -- Andreas Beckmann <anbe@debian.org>  Sun, 11 Jan 2015 22:27:15 +0100
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 11 Jan 2015 22:31:54 +0100
 
 khronos-opencl-headers (2.0~svn26078-1) experimental; urgency=medium
 
@@ -18,7 +18,7 @@ khronos-opencl-headers (1.2-svn26009-1) unstable; urgency=medium
   * New upstream snapshot.
     - Includes cl_egl.h.
   * Switch get-orig-source target to download from SVN.  (Closes: #718658)
-  * Bump Standards-Version to 3.9.5 (no changes needed).
+  * Bump Standards-Version to 3.9.6 (no changes needed).
 
  -- Andreas Beckmann <anbe@debian.org>  Mon, 20 Oct 2014 17:04:48 +0200
 
