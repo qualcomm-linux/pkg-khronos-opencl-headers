@@ -1,3 +1,9 @@
+khronos-opencl-headers (2.0~svn28973-1) UNRELEASED; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 11 Jan 2015 22:27:15 +0100
+
 khronos-opencl-headers (2.0~svn26078-1) experimental; urgency=medium
 
   * New upstream snapshot.
