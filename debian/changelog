@@ -1,3 +1,9 @@
+khronos-opencl-headers (2.0~svn28973-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 27 Apr 2015 17:42:50 +0200
+
 khronos-opencl-headers (2.0~svn28973-1) experimental; urgency=medium
 
   * New upstream snapshot.
