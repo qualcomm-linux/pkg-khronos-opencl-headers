@@ -3,6 +3,7 @@ khronos-opencl-headers (2.0~svn31815-1) UNRELEASED; urgency=medium
   * New upstream snapshot (2015-08-10).
     - Includes cl2.hpp.  (Closes: #795778)
   * Convert packaging repository from SVN to GIT.
+  * Improve portability of header compile tests.
 
  -- Andreas Beckmann <anbe@debian.org>  Mon, 21 Sep 2015 14:19:10 +0200
 

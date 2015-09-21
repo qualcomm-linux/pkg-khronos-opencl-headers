@@ -15,11 +15,11 @@ check:
 	$(MAKE) compile_cl_hpp OPENCLFLAGS=-DCL_USE_DEPRECATED_OPENCL_1_0_APIS
 
 compile_opencl_h:
-	$(CC) $(CFLAGS) -c opencl_h.c
-	$(CXX) $(CXXFLAGS) -c opencl_h.cpp
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c opencl_h.c
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c opencl_h.cpp
 
 compile_cl_hpp:
-	$(CXX) $(CXXFLAGS) -c cl_hpp.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c cl_hpp.cpp
 
 clean:
 	$(RM) *.o
