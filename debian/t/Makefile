@@ -16,7 +16,7 @@ compile_opencl_h:
 	$(CXX) $(CXXFLAGS) -c opencl_h.cpp
 
 compile_cl_hpp:
-	: $(CXX) $(CXXFLAGS) -c cl_hpp.cpp
+	$(CXX) $(CXXFLAGS) -c cl_hpp.cpp
 
 clean:
 	$(RM) *.o
