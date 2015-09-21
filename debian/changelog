@@ -1,8 +1,10 @@
-khronos-opencl-headers (2.0~svn28973-3) UNRELEASED; urgency=medium
+khronos-opencl-headers (2.0~svn31815-1) UNRELEASED; urgency=medium
 
+  * New upstream snapshot (2015-08-10).
+    - Includes cl2.hpp.  (Closes: #795778)
   * Convert packaging repository from SVN to GIT.
 
- -- Andreas Beckmann <anbe@debian.org>  Sun, 20 Sep 2015 18:50:57 +0200
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 21 Sep 2015 14:19:10 +0200
 
 khronos-opencl-headers (2.0~svn28973-2) unstable; urgency=medium
 
@@ -12,13 +14,13 @@ khronos-opencl-headers (2.0~svn28973-2) unstable; urgency=medium
 
 khronos-opencl-headers (2.0~svn28973-1) experimental; urgency=medium
 
-  * New upstream snapshot.
+  * New upstream snapshot (2014-11-18).
 
  -- Andreas Beckmann <anbe@debian.org>  Sun, 11 Jan 2015 22:31:54 +0100
 
 khronos-opencl-headers (2.0~svn26078-1) experimental; urgency=medium
 
-  * New upstream snapshot.
+  * New upstream snapshot (2014-03-25).
     - OpenCL API 2.0.  (Closes: #762943)
     - cl.hpp is gone.
   * Upload to experimental.
@@ -27,7 +29,7 @@ khronos-opencl-headers (2.0~svn26078-1) experimental; urgency=medium
 
 khronos-opencl-headers (1.2-svn26009-1) unstable; urgency=medium
 
-  * New upstream snapshot.
+  * New upstream snapshot (2014-03-19).
     - Includes cl_egl.h.
   * Switch get-orig-source target to download from SVN.  (Closes: #718658)
   * Bump Standards-Version to 3.9.6 (no changes needed).
