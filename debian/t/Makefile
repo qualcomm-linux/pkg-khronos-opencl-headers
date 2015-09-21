@@ -2,7 +2,7 @@ ifneq (,$(filter $(DEB_HOST_ARCH),i386 amd64))
 ARCHFLAGS	+= -msse2 -msse
 endif
 CFLAGS		+= -I. $(OPENCLFLAGS) $(ARCHFLAGS)
-CXXFLAGS	+= -I. $(OPENCLFLAGS) $(ARCHFLAGS)
+CXXFLAGS	+= -std=c++11 -I. $(OPENCLFLAGS) $(ARCHFLAGS)
 
 check:
 	$(MAKE) compile_opencl_h
