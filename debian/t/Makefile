@@ -1,5 +1,8 @@
-CFLAGS		+= -I. $(OPENCLFLAGS) -msse2 -msse
-CXXFLAGS	+= -I. $(OPENCLFLAGS) -msse2 -msse
+ifneq (,$(filter $(DEB_HOST_ARCH),i386 amd64))
+ARCHFLAGS	+= -msse2 -msse
+endif
+CFLAGS		+= -I. $(OPENCLFLAGS) $(ARCHFLAGS)
+CXXFLAGS	+= -I. $(OPENCLFLAGS) $(ARCHFLAGS)
 
 check:
 	$(MAKE) compile_opencl_h
