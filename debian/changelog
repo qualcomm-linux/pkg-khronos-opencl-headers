@@ -1,8 +1,8 @@
-khronos-opencl-headers (2.0~svn31815-2) UNRELEASED; urgency=medium
+khronos-opencl-headers (2.0~svn31815-2) unstable; urgency=medium
 
   * Actually ship cl2.hpp.  (Closes: #795778)
 
- -- Andreas Beckmann <anbe@debian.org>  Wed, 23 Sep 2015 00:09:30 +0200
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 23 Sep 2015 00:10:49 +0200
 
 khronos-opencl-headers (2.0~svn31815-1) unstable; urgency=medium
 
