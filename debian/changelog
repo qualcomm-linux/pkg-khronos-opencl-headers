@@ -1,6 +1,11 @@
 khronos-opencl-headers (2.0~svn32091-1) UNRELEASED; urgency=medium
 
+  [ Andreas Beckmann ]
   * New upstream snapshot (2015-10-07).
+
+  [ James Price ]
+  * Fix macro definitions in cl2.hpp tests
+  * Patch to fix symbol clash when cl2.hpp included from multiple files
 
  -- Andreas Beckmann <anbe@debian.org>  Fri, 23 Oct 2015 23:59:28 +0200
 
