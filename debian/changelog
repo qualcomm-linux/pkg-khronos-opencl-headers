@@ -1,3 +1,9 @@
+khronos-opencl-headers (2.0~svn32091-2) unstable; urgency=medium
+
+  * remove EGL includes (backport upstream patch) (Closes: #809263)
+
+ -- Vincent Danjean <vdanjean@debian.org>  Thu, 11 Feb 2016 11:35:05 +0100
+
 khronos-opencl-headers (2.0~svn32091-1) unstable; urgency=medium
 
   [ Andreas Beckmann ]

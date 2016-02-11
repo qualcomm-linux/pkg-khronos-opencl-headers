@@ -2,9 +2,9 @@ Description: Use __vector instead of vector in cl_platform.h to allow building w
 Author: Aurelien Jarno <aurel32@debian.org>
 Bug-Debian: https://bugs.debian.org/760310
 
---- khronos-opencl-headers-1.2-2014.04.13.orig/cl_platform.h
-+++ khronos-opencl-headers-1.2-2014.04.13/cl_platform.h
-@@ -332,13 +332,13 @@ typedef unsigned int cl_GLenum;
+--- a/cl_platform.h
++++ b/cl_platform.h
+@@ -361,13 +361,13 @@
  /* Define basic vector types */
  #if defined( __VEC__ )
     #include <altivec.h>   /* may be omitted depending on compiler. AltiVec spec provides no way to detect whether the header is required. */
