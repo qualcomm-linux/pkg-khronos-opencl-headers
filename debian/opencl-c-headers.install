@@ -1,3 +1,2 @@
 opencl.h	usr/include/CL/
 cl*.h		usr/include/CL/
-cl*.hpp		usr/include/CL/
