@@ -4,7 +4,7 @@ Bug-Debian: https://bugs.debian.org/760310
 
 --- a/cl_platform.h
 +++ b/cl_platform.h
-@@ -361,13 +361,13 @@
+@@ -387,13 +387,13 @@
  /* Define basic vector types */
  #if defined( __VEC__ )
     #include <altivec.h>   /* may be omitted depending on compiler. AltiVec spec provides no way to detect whether the header is required. */

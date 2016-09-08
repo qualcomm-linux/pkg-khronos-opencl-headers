@@ -1,4 +1,2 @@
 AMD_extensions.patch
 use__vector.patch
-fix_symbol_clash.patch
-from-upstream-fix-egl-includes.patch
