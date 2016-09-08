@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2008-2013 The Khronos Group Inc.
+ * Copyright (c) 2008-2015 The Khronos Group Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and/or associated documentation files (the
@@ -11,6 +11,11 @@
  *
  * The above copyright notice and this permission notice shall be included
  * in all copies or substantial portions of the Materials.
+ *
+ * MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS
+ * KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS
+ * SPECIFICATIONS AND HEADER INFORMATION ARE LOCATED AT
+ *    https://www.khronos.org/registry/
  *
  * THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
@@ -315,7 +320,7 @@ typedef struct _cl_mem_ion_host_ptr
 *********************************/
 #define cl_khr_sub_groups 1
 
-typedef cl_uint  cl_kernel_sub_group_info;
+typedef cl_uint  cl_kernel_sub_group_info_khr;
 
 /* cl_khr_sub_group_info */
 #define CL_KERNEL_MAX_SUB_GROUP_SIZE_FOR_NDRANGE_KHR	0x2033
@@ -324,23 +329,59 @@ typedef cl_uint  cl_kernel_sub_group_info;
 extern CL_API_ENTRY cl_int CL_API_CALL
 clGetKernelSubGroupInfoKHR(cl_kernel /* in_kernel */,
 						   cl_device_id /*in_device*/,
-						   cl_kernel_sub_group_info /* param_name */,
+						   cl_kernel_sub_group_info_khr /* param_name */,
 						   size_t /*input_value_size*/,
 						   const void * /*input_value*/,
 						   size_t /*param_value_size*/,
 						   void* /*param_value*/,
-						   size_t* /*param_value_size_ret*/ ) CL_EXT_SUFFIX__VERSION_2_0;
+						   size_t* /*param_value_size_ret*/ ) CL_EXT_SUFFIX__VERSION_2_0_DEPRECATED;
 						   
 typedef CL_API_ENTRY cl_int
      ( CL_API_CALL * clGetKernelSubGroupInfoKHR_fn)(cl_kernel /* in_kernel */,
 						      cl_device_id /*in_device*/,
-						      cl_kernel_sub_group_info /* param_name */,
+						      cl_kernel_sub_group_info_khr /* param_name */,
 						      size_t /*input_value_size*/,
 						      const void * /*input_value*/,
-						      size_t * /*param_value_size*/,
+						      size_t /*param_value_size*/,
 						      void* /*param_value*/,
-						      size_t* /*param_value_size_ret*/ ) CL_EXT_SUFFIX__VERSION_2_0;
+						      size_t* /*param_value_size_ret*/ ) CL_EXT_SUFFIX__VERSION_2_0_DEPRECATED;
 #endif /* CL_VERSION_2_0 */
+
+#ifdef CL_VERSION_2_1
+/*********************************
+* cl_khr_priority_hints extension
+*********************************/
+#define cl_khr_priority_hints 1
+
+typedef cl_uint  cl_queue_priority_khr;
+
+/* cl_command_queue_properties */
+#define CL_QUEUE_PRIORITY_KHR 0x1096
+
+/* cl_queue_priority_khr */
+#define CL_QUEUE_PRIORITY_HIGH_KHR (1<<0)
+#define CL_QUEUE_PRIORITY_MED_KHR (1<<1)
+#define CL_QUEUE_PRIORITY_LOW_KHR (1<<2)
+
+#endif /* CL_VERSION_2_1 */
+
+#ifdef CL_VERSION_2_1
+/*********************************
+* cl_khr_throttle_hints extension
+*********************************/
+#define cl_khr_throttle_hints 1
+
+typedef cl_uint  cl_queue_throttle_khr;
+
+/* cl_command_queue_properties */
+#define CL_QUEUE_THROTTLE_KHR 0x1097
+
+/* cl_queue_throttle_khr */
+#define CL_QUEUE_THROTTLE_HIGH_KHR (1<<0)
+#define CL_QUEUE_THROTTLE_MED_KHR (1<<1)
+#define CL_QUEUE_THROTTLE_LOW_KHR (1<<2)
+
+#endif /* CL_VERSION_2_1 */
 
 #ifdef __cplusplus
 }
