@@ -1,3 +1,11 @@
+khronos-opencl-headers (2.1-1) unstable; urgency=medium
+
+  * New upstream release (without tarball nor git tag :-( )
+    + OpenCL 2.1 support
+    + no C++ headers anymore, moved to another separate project
+
+ -- Vincent Danjean <vdanjean@debian.org>  Fri, 09 Sep 2016 00:05:33 +0200
+
 khronos-opencl-headers (2.0~svn32091-2) unstable; urgency=medium
 
   * remove EGL includes (backport upstream patch) (Closes: #809263)
