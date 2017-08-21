@@ -1,7 +1,6 @@
 Source: khronos-opencl-headers
 Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
 Uploaders: Andreas Beckmann <anbe@debian.org>,
-           Russ Allbery <rra@debian.org>,
            Vincent Danjean <vdanjean@debian.org>
 Section: libdevel
 Priority: extra
