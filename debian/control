@@ -3,10 +3,10 @@ Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
 Uploaders: Andreas Beckmann <anbe@debian.org>,
            Vincent Danjean <vdanjean@debian.org>
 Section: libdevel
-Priority: extra
+Priority: optional
 Build-Depends: debhelper (>= 9),
                libgl1-mesa-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-opencl/khronos-opencl-headers.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-opencl/khronos-opencl-headers.git
 Homepage: http://www.khronos.org/registry/cl/

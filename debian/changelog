@@ -1,5 +1,9 @@
 khronos-opencl-headers (2.1-2) UNRELEASED; urgency=medium
 
+  [ Andreas Beckmann ]
+  * Set Priority to optional.
+  * Bump Standards-Version to 4.1.0.
+
   [ Russ Allbery ]
   * Remove myself from Uploaders.  (Closes: #872768)
 
