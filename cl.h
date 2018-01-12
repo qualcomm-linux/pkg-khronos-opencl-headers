@@ -279,7 +279,7 @@ typedef struct _cl_buffer_region {
 #define CL_DEVICE_EXTENSIONS                             0x1030
 #define CL_DEVICE_PLATFORM                               0x1031
 #define CL_DEVICE_DOUBLE_FP_CONFIG                       0x1032
-/* 0x1033 reserved for CL_DEVICE_HALF_FP_CONFIG */
+#define CL_DEVICE_HALF_FP_CONFIG                         0x1033
 #define CL_DEVICE_PREFERRED_VECTOR_WIDTH_HALF            0x1034
 #define CL_DEVICE_HOST_UNIFIED_MEMORY                    0x1035   /* deprecated */
 #define CL_DEVICE_NATIVE_VECTOR_WIDTH_CHAR               0x1036
@@ -575,7 +575,7 @@ typedef struct _cl_buffer_region {
 #define CL_KERNEL_ARG_ACCESS_READ_WRITE             0x11A2
 #define CL_KERNEL_ARG_ACCESS_NONE                   0x11A3
     
-/* cl_kernel_arg_type_qualifer */
+/* cl_kernel_arg_type_qualifier */
 #define CL_KERNEL_ARG_TYPE_NONE                     0
 #define CL_KERNEL_ARG_TYPE_CONST                    (1 << 0)
 #define CL_KERNEL_ARG_TYPE_RESTRICT                 (1 << 1)
