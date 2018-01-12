@@ -1,10 +1,10 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: OpenCL headers
-Upstream-Contact: The Khronos Group Inc. <http://www.khronos.org/>
-Source: http://www.khronos.org/registry/cl/
+Upstream-Contact: The Khronos Group Inc. <https://www.khronos.org/>
+Source: https://www.khronos.org/registry/cl/
 
 Files: *
-Copyright: (c) 2008-2015 The Khronos Group Inc.
+Copyright: (c) 2008-2017 The Khronos Group Inc.
 License: Expat-Khronos
  Permission is hereby granted, free of charge, to any person obtaining a
  copy of this software and/or associated documentation files (the
@@ -31,21 +31,21 @@ License: Expat-Khronos
  MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
 
 Files: debian/*
-Copyright: © 2010-2015 Andreas Beckmann <anbe@debian.org>
+Copyright: © 2010-2018 Andreas Beckmann <anbe@debian.org>
            © 2016 Vincent Danjean <vdanjean@debian.org>
 License: GPL-3+
- This program is free software: you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the
- Free Software Foundation, either version 3 of the License, or (at your
- option) any later version.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
  .
- This program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
- Public License for more details.
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
  .
- You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
  .
- The GNU General Public License version 3 may be found on Debian systems
- in /usr/share/common-licenses/GPL-3.
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".

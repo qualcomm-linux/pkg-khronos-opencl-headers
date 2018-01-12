@@ -1,6 +1,6 @@
 Author: Vincent Danjean <vdanjean@debian.org>
 Subject: include AMD extensions in opencl-headers
-Bug-Debian: http://bugs.debian.org/695136
+Bug-Debian: https://bugs.debian.org/695136
 
 --- a/cl_ext.h
 +++ b/cl_ext.h
