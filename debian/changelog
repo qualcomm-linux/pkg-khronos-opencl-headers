@@ -8,6 +8,7 @@ khronos-opencl-headers (2.1-2017.07.18-gf039db6-1) UNRELEASED; urgency=medium
   * Set Priority to optional.
   * Bump Standards-Version to 4.1.3.
   * Use https:// URLs.
+  * Switch to debhelper compat level 11.
 
   [ Russ Allbery ]
   * Remove myself from Uploaders.  (Closes: #872768)
