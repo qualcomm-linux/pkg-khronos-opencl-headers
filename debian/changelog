@@ -1,6 +1,8 @@
 khronos-opencl-headers (2.1-2) UNRELEASED; urgency=medium
 
   [ Andreas Beckmann ]
+  * d/rules: Add "tarball" target to generate upstream snapshot tarballs from
+    the upstream git repository.
   * Set Priority to optional.
   * Bump Standards-Version to 4.1.0.
 
