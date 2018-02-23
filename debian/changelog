@@ -1,4 +1,4 @@
-khronos-opencl-headers (2.2~2018.02.21-gb5c3680-1) UNRELEASED; urgency=medium
+khronos-opencl-headers (2.2~2018.02.21-gb5c3680-1) unstable; urgency=medium
 
   * New upstream snapshot.
     (2018-02-21, commit b5c3680df1e577f002156d64bac3081ddb40ff1e)
@@ -8,7 +8,7 @@ khronos-opencl-headers (2.2~2018.02.21-gb5c3680-1) UNRELEASED; urgency=medium
   * Add debian/upstream/metadata.
   * Update Lintian overrides.
 
- -- Andreas Beckmann <anbe@debian.org>  Fri, 23 Feb 2018 20:28:19 +0100
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 23 Feb 2018 21:19:10 +0100
 
 khronos-opencl-headers (2.1-2017.07.18-gf039db6-1) unstable; urgency=medium
 
