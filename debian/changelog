@@ -5,6 +5,8 @@ khronos-opencl-headers (2.2~2018.02.21-gb5c3680-1) UNRELEASED; urgency=medium
     + OpenCL 2.2 support.
   * Set Rules-Requires-Root: no.
   * Switch Vcs-* URLs to salsa.debian.org.
+  * Add debian/upstream/metadata.
+  * Update Lintian overrides.
 
  -- Andreas Beckmann <anbe@debian.org>  Fri, 23 Feb 2018 20:28:19 +0100
 
