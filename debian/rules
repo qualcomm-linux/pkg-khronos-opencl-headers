@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
 %:
 	dh $@
 
@@ -11,12 +13,14 @@ endif
 override_dh_auto_clean:
 	$(MAKE) -C debian/t clean
 
+UPSTREAM	 = $(subst ., ,$(subst -, ,$(subst ~, ,$(DEB_VERSION_UPSTREAM))))
+MAJOR		?= $(word 1,$(UPSTREAM))
+MINOR		?= $(word 2,$(UPSTREAM))
+
 tarball: COMMIT_TIME = $(shell git log --format=format:%ct -1 $(COMMIT))
 tarball: COMMIT_DATE = $(shell git log --format=format:%cd --date=format:%Y.%m.%d -1 $(COMMIT))
 tarball: PREFIX = khronos-opencl-headers-$(MAJOR).$(MINOR)~$(COMMIT_DATE)-g$(shell git describe --always $(COMMIT))
 tarball:
 	test -n "$(COMMIT)"
-	test -n "$(MAJOR)"
-	test -n "$(MINOR)"
-	faketime @$(COMMIT_TIME) git archive --prefix $(PREFIX)/ $(COMMIT):opencl$(MAJOR)$(MINOR)/CL/ | xz > $(PREFIX).tar.xz
+	git archive --prefix $(PREFIX)/ $(COMMIT) | xz > $(PREFIX).tar.xz
 	touch -d @$(COMMIT_TIME) $(PREFIX).tar.xz
