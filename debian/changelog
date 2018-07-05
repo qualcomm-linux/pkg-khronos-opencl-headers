@@ -4,6 +4,7 @@ khronos-opencl-headers (2.2~2018.05.14-gde26592-1) UNRELEASED; urgency=medium
     (2018-05-14, commit de26592167b9fdea503885e40e8755393c56523d)
     + Unified headers for all OpenCL versions.
   * d/rules: Adjust "tarball" target for reorganized upstream repository.
+  * d/t: Test compilation with all allowed CL_TARGET_OPENCL_VERSION values.
 
  -- Andreas Beckmann <anbe@debian.org>  Thu, 05 Jul 2018 23:54:52 +0200
 
