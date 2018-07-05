@@ -2,8 +2,8 @@ Description: Use __vector instead of vector in cl_platform.h to allow building w
 Author: Aurelien Jarno <aurel32@debian.org>
 Bug-Debian: https://bugs.debian.org/760310
 
---- a/cl_platform.h
-+++ b/cl_platform.h
+--- a/CL/cl_platform.h
++++ b/CL/cl_platform.h
 @@ -387,13 +387,13 @@
  /* Define basic vector types */
  #if defined( __VEC__ )
