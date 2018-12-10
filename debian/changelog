@@ -1,3 +1,10 @@
+khronos-opencl-headers (2.2~2018.10.31-g03490c3-1) UNRELEASED; urgency=medium
+
+  * New upstream snapshot.
+    (2018-10-31, commit 03490c3f8cb3b8667942b084a3151de20649f57a)
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 10 Dec 2018 02:46:10 +0100
+
 khronos-opencl-headers (2.2~2018.05.14-gde26592-1) unstable; urgency=medium
 
   * New upstream snapshot.
