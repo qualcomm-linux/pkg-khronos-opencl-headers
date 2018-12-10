@@ -4,8 +4,9 @@ Uploaders: Andreas Beckmann <anbe@debian.org>,
            Vincent Danjean <vdanjean@debian.org>
 Section: libdevel
 Priority: optional
-Build-Depends: debhelper (>= 11~),
-               libgl1-mesa-dev
+Build-Depends:
+ debhelper-compat (= 11),
+ libgl1-mesa-dev,
 Rules-Requires-Root: no
 Standards-Version: 4.1.5
 Vcs-Browser: https://salsa.debian.org/opencl-team/khronos-opencl-headers
