@@ -29,13 +29,8 @@
 #ifndef __OPENCL_CL_H
 #define __OPENCL_CL_H
 
-#ifdef __APPLE__
-#include <OpenCL/cl_version.h>
-#include <OpenCL/cl_platform.h>
-#else
 #include <CL/cl_version.h>
 #include <CL/cl_platform.h>
-#endif
 
 #ifdef __cplusplus
 extern "C" {
@@ -327,8 +322,8 @@ typedef struct _cl_buffer_region {
 #define CL_DEVICE_PLATFORM                               0x1031
 #ifdef CL_VERSION_1_2
 #define CL_DEVICE_DOUBLE_FP_CONFIG                       0x1032
-#define CL_DEVICE_HALF_FP_CONFIG                         0x1033
 #endif
+/* 0x1033 reserved for CL_DEVICE_HALF_FP_CONFIG which is already defined in "cl_ext.h" */
 #ifdef CL_VERSION_1_1
 #define CL_DEVICE_PREFERRED_VECTOR_WIDTH_HALF            0x1034
 #define CL_DEVICE_HOST_UNIFIED_MEMORY                    0x1035   /* deprecated */
@@ -624,6 +619,9 @@ typedef struct _cl_buffer_region {
 #define CL_SAMPLER_ADDRESSING_MODE                  0x1153
 #define CL_SAMPLER_FILTER_MODE                      0x1154
 #ifdef CL_VERSION_2_0
+/* These enumerants are for the cl_khr_mipmap_image extension.
+   They have since been added to cl_ext.h with an appropriate
+   KHR suffix, but are left here for backwards compatibility. */
 #define CL_SAMPLER_MIP_FILTER_MODE                  0x1155
 #define CL_SAMPLER_LOD_MIN                          0x1156
 #define CL_SAMPLER_LOD_MAX                          0x1157
@@ -1069,7 +1067,7 @@ clSVMFree(cl_context        /* context */,
 
 extern CL_API_ENTRY cl_sampler CL_API_CALL
 clCreateSamplerWithProperties(cl_context                     /* context */,
-                              const cl_sampler_properties *  /* normalized_coords */,
+                              const cl_sampler_properties *  /* sampler_properties */,
                               cl_int *                       /* errcode_ret */) CL_API_SUFFIX__VERSION_2_0;
 
 #endif
@@ -1695,6 +1693,24 @@ clGetExtensionFunctionAddressForPlatform(cl_platform_id /* platform */,
 
 #endif
 
+#ifdef CL_USE_DEPRECATED_OPENCL_1_0_APIS
+    /*
+     *  WARNING:
+     *     This API introduces mutable state into the OpenCL implementation. It has been REMOVED
+     *  to better facilitate thread safety.  The 1.0 API is not thread safe. It is not tested by the
+     *  OpenCL 1.1 conformance test, and consequently may not work or may not work dependably.
+     *  It is likely to be non-performant. Use of this API is not advised. Use at your own risk.
+     *
+     *  Software developers previously relying on this API are instructed to set the command queue
+     *  properties when creating the queue, instead.
+     */
+    extern CL_API_ENTRY cl_int CL_API_CALL
+    clSetCommandQueueProperty(cl_command_queue              /* command_queue */,
+                              cl_command_queue_properties   /* properties */,
+                              cl_bool                        /* enable */,
+                              cl_command_queue_properties * /* old_properties */) CL_EXT_SUFFIX__VERSION_1_0_DEPRECATED;
+#endif /* CL_USE_DEPRECATED_OPENCL_1_0_APIS */
+
 /* Deprecated OpenCL 1.1 APIs */
 extern CL_API_ENTRY CL_EXT_PREFIX__VERSION_1_1_DEPRECATED cl_mem CL_API_CALL
 clCreateImage2D(cl_context              /* context */,
@@ -1762,4 +1778,3 @@ clEnqueueTask(cl_command_queue  /* command_queue */,
 #endif
 
 #endif  /* __OPENCL_CL_H */
-

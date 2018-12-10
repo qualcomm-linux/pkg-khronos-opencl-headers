@@ -36,15 +36,14 @@
 extern "C" {
 #endif
 
-#ifdef __APPLE__
-    #include <OpenCL/cl.h>
-    #include <AvailabilityMacros.h>
-#else
-    #include <CL/cl.h>
-#endif
+#include <CL/cl.h>
 
 /* cl_khr_fp64 extension - no extension #define since it has no functions  */
-/* CL_DEVICE_DOUBLE_FP_CONFIG is defined in CL.h. */
+/* CL_DEVICE_DOUBLE_FP_CONFIG is defined in CL.h for OpenCL >= 120 */
+
+#if CL_TARGET_OPENCL_VERSION <= 110
+#define CL_DEVICE_DOUBLE_FP_CONFIG                       0x1032
+#endif
 
 /* cl_khr_fp16 extension - no extension #define since it has no functions  */
 #define CL_DEVICE_HALF_FP_CONFIG                    0x1033
@@ -439,7 +438,7 @@ typedef struct _cl_mem_android_native_buffer_host_ptr
  * cl_img_cached_allocations extension *
  ******************************************/
 
-/* Flag values used by clCreteBuffer */
+/* Flag values used by clCreateBuffer */
 #define CL_MEM_USE_UNCACHED_CPU_MEMORY_IMG          (1 << 26)
 #define CL_MEM_USE_CACHED_CPU_MEMORY_IMG            (1 << 27)
 
@@ -449,7 +448,7 @@ typedef struct _cl_mem_android_native_buffer_host_ptr
  ******************************************/
 #define cl_img_use_gralloc_ptr 1
 
-/* Flag values used by clCreteBuffer */
+/* Flag values used by clCreateBuffer */
 #define CL_MEM_USE_GRALLOC_PTR_IMG                  (1 << 28)
 
 /* To be used by clGetEventInfo: */
@@ -515,6 +514,16 @@ typedef CL_API_ENTRY cl_int
 
 
 /*********************************
+* cl_khr_mipmap_image extension
+*********************************/
+
+/* cl_sampler_properties */
+#define CL_SAMPLER_MIP_FILTER_MODE_KHR              0x1155
+#define CL_SAMPLER_LOD_MIN_KHR                      0x1156
+#define CL_SAMPLER_LOD_MAX_KHR                      0x1157
+
+
+/*********************************
 * cl_khr_priority_hints extension
 *********************************/
 /* This extension define is for backwards compatibility.
@@ -577,8 +586,8 @@ typedef intptr_t cl_import_properties_arm;
 /* DMA BUF memory type value for CL_IMPORT_TYPE_ARM property */
 #define CL_IMPORT_TYPE_DMA_BUF_ARM                0x40B4
 
-/* Secure DMA BUF memory type value for CL_IMPORT_TYPE_ARM property */
-#define CL_IMPORT_TYPE_SECURE_ARM                 0x40B5
+/* Protected DMA BUF memory type value for CL_IMPORT_TYPE_ARM property */
+#define CL_IMPORT_TYPE_PROTECTED_ARM              0x40B5
 
 /* This extension adds a new function that allows for direct memory import into
  * OpenCL via the clImportMemoryARM function.
@@ -710,6 +719,19 @@ clSetKernelExecInfoARM(cl_kernel            /* kernel */,
                        cl_kernel_exec_info_arm  /* param_name */,
                        size_t               /* param_value_size */,
                        const void *         /* param_value */) CL_EXT_SUFFIX__VERSION_1_2;
+
+/********************************
+ * cl_arm_get_core_id extension *
+ ********************************/
+
+#ifdef CL_VERSION_1_2
+
+#define cl_arm_get_core_id 1
+
+/* Device info property for bitfield of cores present */
+#define CL_DEVICE_COMPUTE_UNITS_BITFIELD_ARM      0x40BF
+
+#endif  /* CL_VERSION_1_2 */
 
 #ifdef __cplusplus
 }
