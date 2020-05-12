@@ -4,31 +4,8 @@ Upstream-Contact: The Khronos Group Inc. <https://www.khronos.org/>
 Source: https://www.khronos.org/registry/cl/
 
 Files: *
-Copyright: (c) 2008-2019 The Khronos Group Inc.
-License: Expat-Khronos
- Permission is hereby granted, free of charge, to any person obtaining a
- copy of this software and/or associated documentation files (the
- "Materials"), to deal in the Materials without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, sublicense, and/or sell copies of the Materials, and to
- permit persons to whom the Materials are furnished to do so, subject to
- the following conditions:
- .
- The above copyright notice and this permission notice shall be included
- in all copies or substantial portions of the Materials.
- .
- MODIFICATIONS TO THIS FILE MAY MEAN IT NO LONGER ACCURATELY REFLECTS
- KHRONOS STANDARDS. THE UNMODIFIED, NORMATIVE VERSIONS OF KHRONOS
- SPECIFICATIONS AND HEADER INFORMATION ARE LOCATED AT
-    https://www.khronos.org/registry/
- .
- THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+Copyright: (c) 2008-2020 The Khronos Group Inc.
+License: Apache-2.0
 
 Files: debian/*
 Copyright: © 2010-2019 Andreas Beckmann <anbe@debian.org>
@@ -49,3 +26,19 @@ License: GPL-3+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ https://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache version 2.0 license
+ can be found in "/usr/share/common-licenses/Apache-2.0".
