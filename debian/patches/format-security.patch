@@ -1,0 +1,14 @@
+Author: Andreas Beckmann <anbe@debian.org>
+Description: disable -Werror=format-security
+ clashes with -Wno-format
+
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -9,6 +9,7 @@ include_directories(${PROJECT_SOURCE_DIR
+ # Make sure headers do not produce warnings
+ if (NOT MSVC)
+ add_compile_options(-Wall -Wextra -Werror -pedantic -Wno-format)
++add_compile_options(-Wno-error=format-security)
+ endif ()
+ 
+ # Add a test for a given source file for each version of OpenCL

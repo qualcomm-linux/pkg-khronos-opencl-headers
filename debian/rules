@@ -3,14 +3,14 @@
 include /usr/share/dpkg/pkg-info.mk
 
 %:
-	dh $@
+	dh $@ --sourcedirectory=tests
 
-override_dh_auto_test:
+execute_after_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) -C debian/t
 endif
 
-override_dh_auto_clean:
+execute_after_dh_auto_clean:
 	$(MAKE) -C debian/t clean
 
 UPSTREAM	 = $(subst ., ,$(subst -, ,$(subst ~, ,$(DEB_VERSION_UPSTREAM))))
