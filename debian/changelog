@@ -3,6 +3,7 @@ khronos-opencl-headers (3.0~2020.05.12-g5cc337c-1) UNRELEASED; urgency=medium
   * New upstream snapshot.
     (2020-05-12, commit 5cc337c890dab1c996cc97b617c578d37a7247bf)
   * Khronos relicensed the headers under Apache-2.0.
+  * Relicense the packaging under Apache-2.0, too.
   * Refresh patch.
   * Run upstream testsuite.
   * Extend our testsuite to 3.0.
