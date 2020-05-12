@@ -4,7 +4,7 @@ Bug-Debian: https://bugs.debian.org/695136
 
 --- a/CL/cl_ext.h
 +++ b/CL/cl_ext.h
-@@ -230,11 +230,46 @@ typedef CL_API_ENTRY cl_command_queue
+@@ -228,6 +228,17 @@ typedef CL_API_ENTRY cl_command_queue
  
  
  /*********************************
@@ -17,24 +17,15 @@ Bug-Debian: https://bugs.debian.org/695136
 +/* cl_device_info */
 +#define CL_DEVICE_MAX_ATOMIC_COUNTERS_EXT           0x4032
 +
++
 +/*********************************
  * cl_amd_device_attribute_query *
  *********************************/
  
- #define CL_DEVICE_PROFILING_TIMER_OFFSET_AMD        0x4036
-+#define CL_DEVICE_TOPOLOGY_AMD                      0x4037
-+#define CL_DEVICE_BOARD_NAME_AMD                    0x4038
-+#define CL_DEVICE_GLOBAL_FREE_MEMORY_AMD            0x4039
-+#define CL_DEVICE_SIMD_PER_COMPUTE_UNIT_AMD         0x4040
-+#define CL_DEVICE_SIMD_WIDTH_AMD                    0x4041
-+#define CL_DEVICE_SIMD_INSTRUCTION_WIDTH_AMD        0x4042
-+#define CL_DEVICE_WAVEFRONT_WIDTH_AMD               0x4043
-+#define CL_DEVICE_GLOBAL_MEM_CHANNELS_AMD           0x4044
-+#define CL_DEVICE_GLOBAL_MEM_CHANNEL_BANKS_AMD      0x4045
-+#define CL_DEVICE_GLOBAL_MEM_CHANNEL_BANK_WIDTH_AMD 0x4046
-+#define CL_DEVICE_LOCAL_MEM_SIZE_PER_COMPUTE_UNIT_AMD   0x4047
-+#define CL_DEVICE_LOCAL_MEM_BANKS_AMD               0x4048
-+
+@@ -254,6 +265,21 @@ typedef CL_API_ENTRY cl_command_queue
+ #define CL_DEVICE_PCIE_ID_AMD                           0x4034
+ 
+ 
 +typedef union
 +{
 +    struct { cl_uint type; cl_uint data[5]; } raw;
@@ -43,11 +34,13 @@ Bug-Debian: https://bugs.debian.org/695136
 +
 +#define CL_DEVICE_TOPOLOGY_TYPE_PCIE_AMD            1
 +
- 
++
 +/**************************
 +* cl_amd_offline_devices *
 +**************************/
 +#define CL_CONTEXT_OFFLINE_DEVICES_AMD              0x403F
- 
++
++
  /*********************************
  * cl_arm_printf extension
+ *********************************/
