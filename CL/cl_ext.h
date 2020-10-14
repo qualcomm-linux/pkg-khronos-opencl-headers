@@ -198,7 +198,7 @@ typedef CL_API_ENTRY cl_int
  *****************************************/
 #define cl_khr_create_command_queue 1
 
-typedef cl_bitfield cl_queue_properties_khr;
+typedef cl_properties cl_queue_properties_khr;
 
 extern CL_API_ENTRY cl_command_queue CL_API_CALL
 clCreateCommandQueueWithPropertiesKHR(cl_context context,
@@ -355,6 +355,13 @@ typedef CL_API_ENTRY cl_int
                                                const cl_event * event_wait_list,
                                                cl_event *       event);
 
+
+/*********************************
+* cl_ext_cxx_for_opencl extension
+*********************************/
+#define cl_ext_cxx_for_opencl 1
+
+#define CL_DEVICE_CXX_FOR_OPENCL_NUMERIC_VERSION_EXT 0x4230
 
 /*********************************
 * cl_qcom_ext_host_ptr extension
@@ -633,6 +640,21 @@ typedef struct _cl_name_version_khr
 #define CL_DEVICE_BUILT_IN_KERNELS_WITH_VERSION_KHR      0x1062
 
 
+/*********************************
+* cl_khr_device_uuid extension
+*********************************/
+#define cl_khr_device_uuid 1
+
+#define CL_UUID_SIZE_KHR 16
+#define CL_LUID_SIZE_KHR 8
+
+#define CL_DEVICE_UUID_KHR          0x106A
+#define CL_DRIVER_UUID_KHR          0x106B
+#define CL_DEVICE_LUID_VALID_KHR    0x106C
+#define CL_DEVICE_LUID_KHR          0x106D
+#define CL_DEVICE_NODE_MASK_KHR     0x106E
+
+
 /**********************************
  * cl_arm_import_memory extension *
  **********************************/
@@ -817,6 +839,26 @@ clSetKernelExecInfoARM(cl_kernel            kernel,
 
 /* cl_command_queue_properties */
 #define CL_QUEUE_JOB_SLOT_ARM                     0x41E1
+
+/*********************************
+* cl_arm_scheduling_controls
+*********************************/
+
+#define cl_arm_scheduling_controls 1
+
+/* cl_device_info */
+#define CL_DEVICE_SCHEDULING_CONTROLS_CAPABILITIES_ARM          0x41E4
+
+#define CL_DEVICE_SCHEDULING_KERNEL_BATCHING_ARM               (1 << 0)
+#define CL_DEVICE_SCHEDULING_WORKGROUP_BATCH_SIZE_ARM          (1 << 1)
+#define CL_DEVICE_SCHEDULING_WORKGROUP_BATCH_SIZE_MODIFIER_ARM (1 << 2)
+
+/* cl_kernel_info */
+#define CL_KERNEL_EXEC_INFO_WORKGROUP_BATCH_SIZE_ARM            0x41E5
+#define CL_KERNEL_EXEC_INFO_WORKGROUP_BATCH_SIZE_MODIFIER_ARM   0x41E6
+
+/* cl_queue_properties */
+#define CL_QUEUE_KERNEL_BATCHING_ARM                            0x41E7
 
 #ifdef __cplusplus
 }
