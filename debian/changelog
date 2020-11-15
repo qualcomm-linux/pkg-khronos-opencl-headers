@@ -4,6 +4,7 @@ khronos-opencl-headers (3.0~2020.10.14-g9fac4e9-1) UNRELEASED; urgency=medium
     (2020-10-14, commit 9fac4e9866a961f66bdd72fa2bff50145512f972)
   * Simplify snapshot generation.
   * Refresh patches.
+  * Update Lintian overrides.
 
  -- Andreas Beckmann <anbe@debian.org>  Sun, 15 Nov 2020 22:57:00 +0100
 
