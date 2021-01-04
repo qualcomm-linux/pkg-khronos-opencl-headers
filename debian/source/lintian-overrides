@@ -2,4 +2,4 @@
 debian-watch-does-not-check-gpg-signature
 
 # ... so we package git snapshots
-hyphen-in-upstream-part-of-debian-changelog-version
+#hyphen-in-upstream-part-of-debian-changelog-version
