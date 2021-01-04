@@ -480,8 +480,9 @@ typedef struct _cl_mem_android_native_buffer_host_ptr
 #define CL_COMMAND_ACQUIRE_GRALLOC_OBJECTS_IMG      0x40D2
 #define CL_COMMAND_RELEASE_GRALLOC_OBJECTS_IMG      0x40D3
 
-/* Error code from clEnqueueReleaseGrallocObjectsIMG */
+/* Error codes from clEnqueueAcquireGrallocObjectsIMG and clEnqueueReleaseGrallocObjectsIMG */
 #define CL_GRALLOC_RESOURCE_NOT_ACQUIRED_IMG        0x40D4
+#define CL_INVALID_GRALLOC_OBJECT_IMG               0x40D5
 
 extern CL_API_ENTRY cl_int CL_API_CALL
 clEnqueueAcquireGrallocObjectsIMG(cl_command_queue      command_queue,
@@ -499,6 +500,44 @@ clEnqueueReleaseGrallocObjectsIMG(cl_command_queue      command_queue,
                                   const cl_event *      event_wait_list,
                                   cl_event *            event) CL_EXT_SUFFIX__VERSION_1_2;
 
+/******************************************
+ * cl_img_generate_mipmap extension *
+ ******************************************/
+#define cl_img_generate_mipmap 1
+
+typedef cl_uint cl_mipmap_filter_mode_img;
+
+/* To be used by clEnqueueGenerateMipmapIMG */
+#define CL_MIPMAP_FILTER_ANY_IMG 0x0
+#define CL_MIPMAP_FILTER_BOX_IMG 0x1
+
+/* To be used by clGetEventInfo */
+#define CL_COMMAND_GENERATE_MIPMAP_IMG 0x40D6
+
+extern CL_API_ENTRY cl_int CL_API_CALL
+clEnqueueGenerateMipmapIMG(cl_command_queue          command_queue,
+                           cl_mem                    src_image,
+                           cl_mem                    dst_image,
+                           cl_mipmap_filter_mode_img mipmap_filter_mode,
+                           const size_t              *array_region,
+                           const size_t              *mip_region,
+                           cl_uint                   num_events_in_wait_list,
+                           const cl_event            *event_wait_list,
+                           cl_event *event) CL_EXT_SUFFIX__VERSION_1_2;
+  
+/******************************************
+ * cl_img_mem_properties extension *
+ ******************************************/
+#define cl_img_mem_properties 1
+
+/* To be used by clCreateBufferWithProperties */
+#define CL_MEM_ALLOC_FLAGS_IMG 0x40D7
+
+/* To be used wiith the CL_MEM_ALLOC_FLAGS_IMG property */
+typedef cl_bitfield cl_mem_alloc_flags_img;
+
+/* To be used with cl_mem_alloc_flags_img */
+#define CL_MEM_ALLOC_RELAX_REQUIREMENTS_IMG (1 << 0)
 
 /*********************************
 * cl_khr_subgroups extension
