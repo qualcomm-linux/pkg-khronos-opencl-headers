@@ -1,2 +1,2 @@
-CL/opencl.h	usr/include/CL/
-CL/cl*.h	usr/include/CL/
+usr/include/CL
+usr/share/cmake
