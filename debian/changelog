@@ -1,6 +1,7 @@
 khronos-opencl-headers (3.0~2020.12.18-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update watch file to match upstream tags.
 
  -- Andreas Beckmann <anbe@debian.org>  Mon, 04 Jan 2021 18:05:34 +0100
 
