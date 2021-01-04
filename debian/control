@@ -9,7 +9,7 @@ Build-Depends:
  libgl1-mesa-dev,
  cmake,
 Rules-Requires-Root: no
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Vcs-Browser: https://salsa.debian.org/opencl-team/khronos-opencl-headers
 Vcs-Git: https://salsa.debian.org/opencl-team/khronos-opencl-headers.git
 Homepage: https://www.khronos.org/registry/cl/
