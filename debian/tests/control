@@ -1,0 +1,3 @@
+Tests: compile-headers
+Depends: opencl-c-headers, g++, libva-dev
+Restrictions: superficial, allow-stderr

@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+set -x
+
+for h in $(dpkg -L opencl-c-headers | grep '\.h$' | sed s%/usr/include/%%)
+do
+	case "$h" in
+		CL/cl_d3d10.h|\
+		CL/cl_d3d11.h|\
+		CL/cl_dx9_media_sharing.h|\
+		CL/cl_dx9_media_sharing_intel.h)
+			# needs windows specific d3d*.h
+			continue
+			;;
+	esac
+	for std in '' 100 110 120 200 210 220 300
+	do
+		echo "#include <$h>" | gcc -x c ${std:+-DCL_TARGET_OPENCL_VERSION=$std} -c -
+		echo "#include <$h>" | g++ -x c++ ${std:+-DCL_TARGET_OPENCL_VERSION=$std} -c -
+	done
+done
