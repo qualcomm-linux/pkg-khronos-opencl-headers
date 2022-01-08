@@ -4,11 +4,11 @@ Upstream-Contact: The Khronos Group Inc. <https://www.khronos.org/>
 Source: https://www.khronos.org/registry/cl/
 
 Files: *
-Copyright: (c) 2008-2020 The Khronos Group Inc.
+Copyright: (c) 2008-2021 The Khronos Group Inc.
 License: Apache-2.0
 
 Files: debian/*
-Copyright: © 2010-2021 Andreas Beckmann <anbe@debian.org>
+Copyright: © 2010-2022 Andreas Beckmann <anbe@debian.org>
            © 2016 Vincent Danjean <vdanjean@debian.org>
 License: Apache-2.0
 
