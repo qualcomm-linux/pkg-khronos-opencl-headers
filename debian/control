@@ -6,7 +6,6 @@ Section: libdevel
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13),
- libgl1-mesa-dev,
  cmake,
 Rules-Requires-Root: no
 Standards-Version: 4.6.0
