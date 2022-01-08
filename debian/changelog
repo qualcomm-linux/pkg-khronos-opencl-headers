@@ -2,6 +2,7 @@ khronos-opencl-headers (3.0~2022.01.04-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Drop no longer needed B-D: libgl1-mesa-dev.
+  * Enable upstream build-time tests.
 
  -- Andreas Beckmann <anbe@debian.org>  Sat, 08 Jan 2022 02:38:30 +0100
 

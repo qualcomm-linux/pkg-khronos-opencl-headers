@@ -5,6 +5,9 @@ include /usr/share/dpkg/pkg-info.mk
 %:
 	dh $@
 
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_TESTING=ON
+
 execute_after_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	$(MAKE) -C debian/t
