@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e -u -x
+cp -a tests/ "$AUTOPKGTEST_TMP"
+cd "$AUTOPKGTEST_TMP"
+cat > CMakeLists.txt << EOF
+  include(CTest)
+  add_subdirectory(tests)
+EOF
+mkdir build
+cd build
+cmake -Wno-dev ..
+make
+make test
