@@ -2,6 +2,7 @@ khronos-opencl-headers (3.0~2022.05.18-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Refresh patches.
+  * Bump Standards-Version to 4.6.1 (no changes needed).
 
  -- Andreas Beckmann <anbe@debian.org>  Tue, 24 May 2022 21:14:53 +0200
 
