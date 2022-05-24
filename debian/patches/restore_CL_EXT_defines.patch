@@ -33,4 +33,4 @@ Description: define CL_EXT_* to CL_API_* to restore support for external users o
 +
  #if (defined (_WIN32) && defined(_MSC_VER))
  
- /* intptr_t is used in cl.h and provided by stddef.h in Visual C++, but not in clang */
+ #if defined(__clang__)
