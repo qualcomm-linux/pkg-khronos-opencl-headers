@@ -1,5 +1,5 @@
 # upstream does not provide a tarball or a git tag let alone a signature ...
-debian-watch-does-not-check-gpg-signature
+debian-watch-does-not-check-openpgp-signature
 
 # ... so we package git snapshots
 #hyphen-in-upstream-part-of-debian-changelog-version
