@@ -1,7 +1,17 @@
 Tests: compile-headers
-Depends: opencl-c-headers, g++, libva-dev
-Restrictions: superficial, allow-stderr
+Depends:
+ opencl-c-headers,
+ g++,
+ libva-dev,
+Restrictions:
+ superficial,
+ allow-stderr,
 
 Tests: upstream-testsuite
-Depends: opencl-c-headers, cmake, g++
-Restrictions: allow-stderr
+Depends:
+ opencl-c-headers,
+ cmake,
+ g++,
+ make,
+Restrictions:
+ allow-stderr,
