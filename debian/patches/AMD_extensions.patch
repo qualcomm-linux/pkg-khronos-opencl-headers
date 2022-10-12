@@ -4,7 +4,7 @@ Bug-Debian: https://bugs.debian.org/695136
 
 --- a/CL/cl_ext.h
 +++ b/CL/cl_ext.h
-@@ -609,6 +609,17 @@ typedef cl_command_queue
+@@ -716,6 +716,17 @@ typedef cl_command_queue
  
  
  /*********************************
@@ -22,7 +22,7 @@ Bug-Debian: https://bugs.debian.org/695136
  * cl_amd_device_attribute_query *
  *********************************/
  
-@@ -635,6 +646,21 @@ typedef cl_command_queue
+@@ -742,6 +753,21 @@ typedef cl_command_queue
  #define CL_DEVICE_PCIE_ID_AMD                           0x4034
  
  
