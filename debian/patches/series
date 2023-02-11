@@ -1,1 +1,2 @@
 AMD_extensions.patch
+install-pkgconfig-bits-to-DATADIR.patch
