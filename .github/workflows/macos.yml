@@ -24,6 +24,10 @@ jobs:
         # Install Ninja only if it's the selected generator and it's not available.
         cmake --version
 
+    - name: Install gcc if required
+      run: |
+        if [[ ! `which /usr/local/bin/gcc-${{matrix.VER}}` ]]; then brew install gcc@${{matrix.VER}}; fi;
+
     - name: Configure CMake
       shell: bash
       run: cmake
@@ -58,4 +62,6 @@ jobs:
 
     - name: Test pkg-config
       shell: bash
-      run: PKG_CONFIG_PATH="$GITHUB_WORKSPACE/install/lib/pkgconfig" pkg-config OpenCL-Headers --cflags | grep -q "\-I$GITHUB_WORKSPACE/install/include"
+      run: |
+        if [[ ! `which pkg-config` ]]; then brew install pkg-config; fi;
+        PKG_CONFIG_PATH="$GITHUB_WORKSPACE/install/share/pkgconfig" pkg-config OpenCL-Headers --cflags | grep -q "\-I$GITHUB_WORKSPACE/install/include"
