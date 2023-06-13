@@ -1,6 +1,7 @@
 khronos-opencl-headers (3.0~2023.04.17-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Refresh patches.
 
  -- Andreas Beckmann <anbe@debian.org>  Tue, 13 Jun 2023 17:47:44 +0200
 
