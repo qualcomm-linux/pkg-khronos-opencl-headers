@@ -1,3 +1,9 @@
+khronos-opencl-headers (3.0~2023.12.14-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 02 Jan 2024 14:53:01 +0100
+
 khronos-opencl-headers (3.0~2023.04.17-1) unstable; urgency=medium
 
   * New upstream release.

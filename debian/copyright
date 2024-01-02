@@ -4,7 +4,8 @@ Upstream-Contact: The Khronos Group Inc. <https://www.khronos.org/>
 Source: https://www.khronos.org/registry/cl/
 
 Files: *
-Copyright: (c) 2008-2022 The Khronos Group Inc.
+Copyright:
+ (c) 2008-2023 The Khronos Group Inc.
 License: Apache-2.0
 
 Files: debian/*
