@@ -134,6 +134,7 @@ orderedExtensions = [
     'cl_ext_float_atomics',
     'cl_intel_create_mem_object_properties',
     'cl_pocl_content_size',
+    'cl_ext_image_raw10_raw12',
     # cl_d3d10.h
     'cl_khr_d3d10_sharing',
     'cl_intel_sharing_format_query_d3d10',
@@ -162,7 +163,16 @@ orderedExtensions = [
 
 def getExtensionSortKey(item):
     name = item.get('name')
-    return orderedExtensions.index(name)
+    try:
+        index = orderedExtensions.index(name)
+    except ValueError:
+        if name.startswith('cl_khr'):
+            index = 10000
+        elif name.startswith('cl_ext'):
+            index = 10001
+        else:
+            index = 10002
+    return index, name
 
 # Order the extensions should be emitted in the headers.
 # KHR -> EXT -> Vendor Extensions
@@ -353,15 +363,18 @@ ${typedefs[type.get('name')].Typedef.ljust(27)} ${type.get('name')};
 <%
     api = apisigs[func.get('name')]
 %>
-typedef ${api.RetType} (CL_API_CALL *
-${api.Name}_fn)(
+typedef ${api.RetType} CL_API_CALL
+${api.Name}_t(
 %        for i, paramStr in enumerate(getCParameterStrings(api.Params)):
 %          if i < len(api.Params)-1:
     ${paramStr},
 %          else:
-    ${paramStr}) ${api.Suffix};
+    ${paramStr});
 %          endif
 %        endfor
+
+typedef ${api.Name}_t *
+${api.Name}_fn ${api.Suffix};
 %      endfor
 %      if generate_pfn_typedefs:
 
@@ -375,15 +388,8 @@ ${api.Name}_fn)(
 <%
     api = apisigs[func.get('name')]
 %>
-typedef ${api.RetType} (CL_API_CALL *
-pfn_${api.Name})(
-%          for i, paramStr in enumerate(getCParameterStrings(api.Params)):
-%            if i < len(api.Params)-1:
-    ${paramStr},
-%            else:
-    ${paramStr}) ${api.Suffix};
-%            endif
-%          endfor
+typedef ${api.Name}_t *
+pfn_${api.Name} ${api.Suffix};
 %        endfor
 %      endif
 
