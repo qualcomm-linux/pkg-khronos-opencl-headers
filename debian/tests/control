@@ -7,6 +7,14 @@ Restrictions:
  superficial,
  allow-stderr,
 
+Tests: compile-clhpp-headers
+Depends:
+ opencl-clhpp-headers,
+ g++,
+Restrictions:
+ superficial,
+ allow-stderr,
+
 Tests: upstream-testsuite
 Depends:
  opencl-c-headers,
