@@ -27,7 +27,7 @@ Description: OpenCL (Open Computing Language) C header files
  CPUs, GPUs and other processors.
  .
  This package provides the C development header files for the OpenCL API
- as published by The Khronos Group Inc.  The corresponding specification and
+ as published by The Khronos Group Inc. The corresponding specification and
  documentation can be found on the Khronos website.
 
 Package: opencl-headers
@@ -42,5 +42,5 @@ Description: OpenCL (Open Computing Language) header files
  CPUs, GPUs and other processors.
  .
  This metapackage depends on packages providing the C and C++ headers files
- for the OpenCL API as published by The Khronos Group Inc.  The corresponding
+ for the OpenCL API as published by The Khronos Group Inc. The corresponding
  specification and documentation can be found on the Khronos website.

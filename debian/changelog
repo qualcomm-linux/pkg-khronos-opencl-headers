@@ -1,9 +1,9 @@
-khronos-opencl-headers (3.0~2024.10.24-2) UNRELEASED; urgency=medium
+khronos-opencl-headers (3.0~2024.10.24-2) unstable; urgency=medium
 
   * Bump opencl-clhpp-headers breaks due to updated extensions.
   * Add autopkgtest compiling opencl-clhpp-headers.
 
- -- Andreas Beckmann <anbe@debian.org>  Wed, 27 Nov 2024 10:15:18 +0100
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 27 Nov 2024 12:55:28 +0100
 
 khronos-opencl-headers (3.0~2024.10.24-1) unstable; urgency=medium
 
