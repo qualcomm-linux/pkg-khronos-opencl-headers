@@ -17,7 +17,9 @@ Package: opencl-c-headers
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Breaks: opencl-headers (<< 2.1), opencl-clhpp-headers (<< 3.0~2.0.14)
+Breaks:
+ opencl-headers (<< 2.1),
+ opencl-clhpp-headers (<< 3.0~2024.10.24),
 Replaces: opencl-headers (<< 2.1)
 Description: OpenCL (Open Computing Language) C header files
  OpenCL (Open Computing Language) is a multi-vendor open standard for
