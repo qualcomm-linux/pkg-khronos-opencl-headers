@@ -1,3 +1,9 @@
+khronos-opencl-headers (3.0~2025.07.22-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 12 Aug 2025 11:34:01 +0200
+
 khronos-opencl-headers (3.0~2024.10.24-2) unstable; urgency=medium
 
   * Bump opencl-clhpp-headers breaks due to updated extensions.
