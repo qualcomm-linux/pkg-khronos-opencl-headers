@@ -1,9 +1,9 @@
-khronos-opencl-headers (3.0~2025.07.22-2) UNRELEASED; urgency=medium
+khronos-opencl-headers (3.0~2025.07.22-2) unstable; urgency=medium
 
   * autopkgtest: Call cmake_minimum_required().  (Closes: #1116509)
   * Drop redundant Rules-Requires-Root: no.
 
- -- Andreas Beckmann <anbe@debian.org>  Sun, 28 Sep 2025 21:51:53 +0200
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 29 Sep 2025 00:38:07 +0200
 
 khronos-opencl-headers (3.0~2025.07.22-1) unstable; urgency=medium
 
