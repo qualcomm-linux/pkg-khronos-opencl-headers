@@ -1,4 +1,4 @@
-name: Pre-merge
+name: Pre-Merge
 description: |
   Tests that with this PR, the package builds successfully.
 
