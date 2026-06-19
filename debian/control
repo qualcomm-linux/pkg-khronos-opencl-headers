@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.6.2
+Standards-Version: 4.7.4
 
 Package: template1
 Architecture: any
