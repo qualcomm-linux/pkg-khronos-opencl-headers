@@ -1,6 +1,5 @@
 Source: template
 Section: libs
-Priority: optional
 Maintainer: Maintainers.pkg-template <Maintainers.pkg-template@qualcomm.com>
 Uploaders:
  FirstName LastName <user@oss.qualcomm.com>,
