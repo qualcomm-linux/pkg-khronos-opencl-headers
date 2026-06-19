@@ -1,7 +1,7 @@
 Source: template
 Section: libs
 Priority: optional
-Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
+Maintainer: Maintainers.pkg-template <Maintainers.pkg-template@qualcomm.com>
 Uploaders:
  FirstName LastName <user@oss.qualcomm.com>,
 Build-Depends: debhelper-compat (= 13)
