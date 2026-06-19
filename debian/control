@@ -2,6 +2,8 @@ Source: template
 Section: libs
 Priority: optional
 Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
+Uploaders:
+ FirstName LastName <user@oss.qualcomm.com>,
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.7.4
 Homepage: https://github.com/qualcomm-linux/<upstream>
