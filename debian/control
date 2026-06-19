@@ -1,9 +1,13 @@
 Source: template
 Section: libs
-Priority: optional
-Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
-Build-Depends: debhelper (>= 13)
-Standards-Version: 4.6.2
+Maintainer: Maintainers.pkg-template <Maintainers.pkg-template@qualcomm.com>
+Uploaders:
+ FirstName LastName <user@oss.qualcomm.com>,
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.4
+Homepage: https://github.com/qualcomm-linux/<upstream>
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-<upstream>
+Vcs-Git: https://github.com/qualcomm-linux/pkg-<upstream>.git
 
 Package: template1
 Architecture: any
