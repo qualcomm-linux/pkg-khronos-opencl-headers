@@ -2,7 +2,7 @@ Source: template
 Section: libs
 Priority: optional
 Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
-Build-Depends: debhelper (>= 13)
+Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
 
 Package: template1
