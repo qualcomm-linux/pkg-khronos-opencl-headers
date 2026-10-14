@@ -1,0 +1,37 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_TESTING=ON
+
+execute_after_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	$(MAKE) -C debian/t
+endif
+
+execute_after_dh_auto_clean:
+	$(MAKE) -C debian/t clean
+
+
+ifneq (,$(wildcard .git))
+khronos:
+	git remote show $@ >/dev/null 2>&1 || git remote add $@ $(shell sed -rn 's/Repository: //p' debian/upstream/metadata)
+	git fetch $@ --prune
+
+UPSTREAM	 = $(subst ., ,$(subst -, ,$(subst ~, ,$(DEB_VERSION_UPSTREAM))))
+MAJOR		?= $(word 1,$(UPSTREAM))
+MINOR		?= $(word 2,$(UPSTREAM))
+
+tarball: COMMIT ?= khronos/master
+tarball: COMMIT_TIME = $(shell git log --format=format:%ct -1 $(COMMIT))
+tarball: COMMIT_DATE = $(shell git log --format=format:%cd --date=format:%Y.%m.%d -1 $(COMMIT))
+tarball: PREFIX = khronos-opencl-headers-$(MAJOR).$(MINOR)~$(COMMIT_DATE)-g$(shell git describe --always $(COMMIT))
+tarball:
+	test -n "$(COMMIT)"
+	git archive --prefix $(PREFIX)/ $(COMMIT) | xz > $(PREFIX).tar.xz
+	touch -d @$(COMMIT_TIME) $(PREFIX).tar.xz
+endif

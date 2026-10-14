@@ -1,0 +1,10 @@
+khronos-opencl-headers for Debian
+---------------------------------
+
+The headers can be downloaded as individual files from
+<https://www.khronos.org/registry/cl/>.  The 'tarball' target in
+debian/rules can be used to generate a tarball from the upstream git
+repository https://github.com/KhronosGroup/OpenCL-Headers.git
+(needs to be avalable as a remote). The MAJOR, MINOR and COMMIT
+environment variables must be set to select the API version and
+the commit to be packaged.

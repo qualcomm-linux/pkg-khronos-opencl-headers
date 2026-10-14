@@ -1,0 +1,44 @@
+Author: Vincent Danjean <vdanjean@debian.org>
+Subject: include AMD extensions in opencl-headers
+Bug-Debian: https://bugs.debian.org/695136
+
+--- a/CL/cl_ext.h
++++ b/CL/cl_ext.h
+@@ -863,6 +863,17 @@ clCreateCommandQueueWithPropertiesKHR(
+ #define CL_DEVICE_INTEGRATED_MEMORY_NV                      0x4006
+ 
+ /***************************************************************
++* cl_amd_device_memory_flags *
++***************************************************************/
++#define cl_amd_device_memory_flags 1
++
++#define CL_MEM_USE_PERSISTENT_MEM_AMD       (1 << 6)        // Alloc from GPU's CPU visible heap
++
++/* cl_device_info */
++#define CL_DEVICE_MAX_ATOMIC_COUNTERS_EXT           0x4032
++
++
++/***************************************************************
+ * cl_amd_device_attribute_query
+ ***************************************************************/
+ #define cl_amd_device_attribute_query 1
+@@ -892,6 +903,19 @@ clCreateCommandQueueWithPropertiesKHR(
+ #define CL_DEVICE_PREFERRED_CONSTANT_BUFFER_SIZE_AMD        0x4033
+ #define CL_DEVICE_PCIE_ID_AMD                               0x4034
+ 
++typedef union
++{
++    struct { cl_uint type; cl_uint data[5]; } raw;
++    struct { cl_uint type; cl_char unused[17]; cl_char bus; cl_char device; cl_char function; } pcie;
++} cl_device_topology_amd;
++
++#define CL_DEVICE_TOPOLOGY_TYPE_PCIE_AMD            1
++
++/***************************************************************
++* cl_amd_offline_devices *
++***************************************************************/
++#define CL_CONTEXT_OFFLINE_DEVICES_AMD              0x403F
++
+ /***************************************************************
+ * cl_arm_printf
+ ***************************************************************/
